@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="d-flex">
+        <div>
+            <a href="#">
+                <img src="images/logo.png" alt="">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Destination</li>
+                <li>Pages</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        <div>
+            <div class="search-icon d-flex">
+                <a href="#">
+                    <i class="fa fa-search"></i>
+                </a>
+            </div>
+            <div class="drop-down-menu d-flex" onclick="myfunction()">
+                <a href="#">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+
+    <main>
+        <section class="slider ">
+            <div class="slider-text d-flex">
+                <h3>Australia</h3>
+                <p>pixel perfect design with awesome contents</p>
+                <a href="" class="slider-btn">Explore now</a>
+            </div>
+        </section>
+        <section class="search-bar d-flex">
+            <h3>Where you want to go?</h3>
+            <form action="" class="search-form d-flex">
+                <input type="text" placeholder="where go to?">
+                <input type="text" placeholder="where go to?">
+                <input type="text" placeholder="where go to?">
+                <button class="search-btn">Search</button>
+            </form>
+        </section>
+        <section class="popular">
+            <section class="row popular-heading">
+                <h3 class="popular-title">Popular Destination</h3>
+                <p class="popular-description">Suffered alteration in some form, by injected humour or good day
+                    randomised booth anim 8-bit hella wolf moon beard words.</p>
+            </section>
+
+
+
+
+            <section class=" row popular-countainer">
+
+                <article>
+                    <img src="images/1.png" alt="">
+                    <div class="popular-image-info">
+                        <p>Italy <a href="#"> 07 Places</a></p>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/2.png" alt="">
+                    <div class="popular-image-info">
+                        <p>Brazil <a href="#"> 03 Places</a></p>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/3.png" alt="">
+                    <div class="popular-image-info">
+                        <p>America <a href="#"> 10 Places</a></p>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/4.png" alt="">
+                    <div class="popular-image-info">
+                        <p>Nepal <a href="#"> 02 Places</a></p>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/5.png" alt="">
+                    <div class="popular-image-info">
+                        <p>Maldives <a href="#"> 02 Places</a></p>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/6.png" alt="">
+                    <div class="popular-image-info">
+                        <p>Maldives <a href="#"> 02 Places</a></p>
+                    </div>
+                </article>
+
+            </section>
+
+        </section>
+
+        <section class="newsletter d-flex">
+            <div class="newsletter-container row">
+                <div class="newsletter-text d-flex">
+                    <h4>Subscribe Our Newsletter</h4>
+                    <p>Subscribe newsletter to get offers and about new places to discover.</p>
+                </div>
+                <div class="mail-form">
+                    <input placeholder="Your Mail" type="email" id="efi">
+                    <button class="newsletter-btn" type="submit" id="esi" onclick="erfan()">Subscribe</button>
+                </div>
+            </div>
+        </section>
+        <section class="video">
+            <section class="video-container d-flex">
+                <h3> Enjoy Video</h3>
+                <div class="video-btn d-flex">
+                    <a href="#">
+                        <i class="fa fa-play"></i>
+                    </a>
+                </div>
+            </section>
+        </section>
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+    <footer class="row">
+
+        <div class="left-footer">
+            <img src="images/footer_logo.png" alt="" class="footer-img">
+            <ul class="footer-info">
+                <li>5th flora, 700/D kings road, green</li>
+                <li>lane New York-1782
+                </li>
+                <li>+10 367 826 2567</li>
+                <li>erfan@gmail.com</li>
+                <li>MADE BY ERFAN ESMKHANI</li>
+            </ul>
+        </div>
+
+
+        <div class="right-footer d-flex">
+            <h3 class="footer-title">Popular destination</h3>
+            <ul class="links">
+                <li>
+                    <a href="#">
+                        Indonesia</a>
+                </li>
+                <li>
+                    <a href="#">
+                        India</a>
+                </li>
+                <li>
+                    <a href="#">
+                        Italy</a>
+                </li>
+                <li>
+                    <a href="#">
+                        Franch</a>
+                </li>
+                <li>
+                    <a href="#">
+                        America</a>
+                </li>
+                <li>
+                    <a href="#">
+                        Switzerland</a>
+                </li>
+                <li>
+                    <a href="#">
+                        Canada</a>
+                </li>
+                <li>
+                    <a href="#">
+                        England</a>
+                </li>
+            </ul>
+        </div>
+
+    </footer>
+</body>
+<script>
+
+
+
+    function erfan() {
+
+        var x = document.getElementById('efi').value;
+
+        try {
+            if (x == "") throw ('this is empty');
+
+            if (x == Number(x)) throw ('this is not email');
+
+            if (isNaN(x), '@') throw ('this is ok')
+        }
+        catch (err) {
+
+            alert(err)
+        }
+        finally {
+            document.getElementById('efi').value = ""
+        }
+
+        //   document.write(x.value).innerHtml;
+
+    }
+
+
+</script>
+
+</html>
